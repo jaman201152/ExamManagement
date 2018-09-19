@@ -53,6 +53,13 @@ namespace OnlineEMS.Controllers
             return "Error Occured";
         }
 
+
+        public ActionResult Details()
+        {
+
+            return View();
+        }
+
       
 
         

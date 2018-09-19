@@ -295,6 +295,8 @@
     <Content Include="Views\Batch\BatchInformationViewForm.cshtml" />
     <Content Include="Views\Batch\BatchCreate.cshtml" />
     <Content Include="Views\Dashboard\IndexView.cshtml" />
+    <Content Include="Views\Organization\Details.cshtml" />
+    <Content Include="Views\Course\CourseDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

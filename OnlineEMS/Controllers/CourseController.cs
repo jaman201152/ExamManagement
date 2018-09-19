@@ -60,6 +60,14 @@ namespace OnlineEMS.Controllers
             
         }
 
+        public ActionResult CourseDetails()
+        {
+            return View();
+        }
+
+
+
+
   
 
 	}
