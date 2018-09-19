@@ -1,0 +1,95 @@
+﻿@using System.Web.Mvc.Html
+@model Models.ViewMoldels.Batch.BatchCreateVM
+
+@{
+    Layout = null;
+}
+
+<ul class="breadcrumb">
+    <li>
+        <i class="icon-home"></i>
+        <a href="~/Dashboard/Dashboard">Home</a>
+        <i class="icon-angle-right"></i>
+    </li>
+    <li><a href="#">Add Batch</a></li>
+</ul>
+
+
+<div>
+    <div class="box span5">
+        <div class="box-header" data-original-title>
+            <h2><i class="halflings-icon edit"></i><span class="break"></span>Batch Manage</h2>
+            <div class="box-icon">
+                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <form method="POST">
+
+                <div class="container">
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Oganization Name</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(c => c.OrganizationId, Model.selectListOrganization)
+                                @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        
+                 <div class="form-group">
+                                <label for="Name" class="col-md-2">Course Name</label>
+                                <div class="col-md-10">
+                                    <select id="CourseId" name="CourseId"><option>..Select..</option></select>
+                                </div>
+                            </div>
+              
+                            <div class="form-group">
+                                <label for="Name" class="col-md-2">Batch No</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.BatchNo, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(c => c.BatchNo)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Code" class="col-md-2">Description</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Description, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(c => c.Description)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="CourseDuration" class="col-md-2">Course Duration</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.StartDate, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(c => c.StartDate)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Credit" class="col-md-2">Credit</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.EndDate, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(c => c.EndDate)
+                                </div>
+                            </div>
+
+                            <br />
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary col-md-offset-2" />
+
+                            </div>
+
+                        </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+
+

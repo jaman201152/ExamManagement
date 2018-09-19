@@ -1,0 +1,114 @@
+﻿@using System.Web.Mvc.Html
+@model Models.ViewMoldels.Course.CourseCreateVM
+
+@{
+    Layout = null;
+}
+
+
+<ul class="breadcrumb">
+    <li>
+        <i class="icon-home"></i>
+        <a href="~/Dashboard/Dashboard">Home</a>
+        <i class="icon-angle-right"></i>
+    </li>
+    <li><a href="#">Course Manage</a></li>
+</ul>
+
+
+
+<div>
+    <div class="box span5">
+        <div class="box-header" data-original-title>
+            <h2><i class="halflings-icon edit"></i><span class="break"></span>Course Manage</h2>
+            <div class="box-icon">
+                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <form method="POST" id="CourseCreateForm">
+
+                <div class="container">
+
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Oganization Name</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(c => c.OrganizationId, Model.SelectListItemsOrganization, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Name</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.Name)
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Code" class="col-md-2">Code</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.Code, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.Code)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="CourseDuration" class="col-md-2">Course Duration</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.CourseDuration, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.CourseDuration)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Credit" class="col-md-2">Credit</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.Credit, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.Credit)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="OutLine" class="col-md-2">OutLine</label>
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(c => c.OutLine, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.OutLine)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Tags" class="col-md-2">Tags</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.Tags, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.Tags)
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group">
+
+                            <input type="submit" name="submit" value="Save" class="btn btn-primary col-md-offset-2" />
+
+                            <!-- Start Loader and Saving Message -->
+                            <span class="custom_loader">
+                                <i class="fa fa-refresh fa-spin"></i>
+                                Saving please Wait ...
+                            </span>
+                            <div class="msgSaved" style="color: green" class="text-center"></div>
+                            <div class="msgNotSaved" style="color: red" class="text-center"></div>
+                            <!-- End Loader and Saving Message -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+        </div>
+
+        </div>
+
+

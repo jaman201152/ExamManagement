@@ -1,0 +1,74 @@
+D:\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+D:\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+D:\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+D:\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+D:\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+D:\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+D:\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+D:\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+D:\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+D:\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+D:\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+D:\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+D:\ProjectWork\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+D:\ProjectWork\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\Practice Work\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Exam_Participant_Trainer_ModelCreated.resources
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Exam_Participant_Trainer_ModelCreated.resources
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+E:\Kamruzzaman-50\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
