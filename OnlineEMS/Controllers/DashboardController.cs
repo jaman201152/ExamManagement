@@ -10,7 +10,7 @@ namespace OnlineEMS.Controllers
     {
         //
         // GET: /Dashboard/
-        public ActionResult DashBoard()
+        public ActionResult IndexView()
         {
 
             return View();
