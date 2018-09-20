@@ -24,6 +24,8 @@ namespace OnlineEMS
 
                 conf.CreateMap<OrganizationCreateVM,Organization>();
 
+                conf.CreateMap<Organization,OrganizationCreateVM>();
+
                 conf.CreateMap<CourseCreateVM, Course>();
 
                 conf.CreateMap<BatchCreateVM, Batch>();

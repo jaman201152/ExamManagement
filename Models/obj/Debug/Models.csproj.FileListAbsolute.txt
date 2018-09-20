@@ -26,3 +26,10 @@ E:\Kamruzzaman-50\OnlineEMS\Models\bin\Debug\System.Web.Mvc.xml
 E:\Kamruzzaman-50\OnlineEMS\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 E:\Kamruzzaman-50\OnlineEMS\Models\obj\Debug\Models.dll
 E:\Kamruzzaman-50\OnlineEMS\Models\obj\Debug\Models.pdb
+G:\GitManage\OnlineEMS\Models\bin\Debug\Models.dll
+G:\GitManage\OnlineEMS\Models\bin\Debug\Models.pdb
+G:\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc.dll
+G:\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc.xml
+G:\GitManage\OnlineEMS\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+G:\GitManage\OnlineEMS\Models\obj\Debug\Models.dll
+G:\GitManage\OnlineEMS\Models\obj\Debug\Models.pdb

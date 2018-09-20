@@ -19,6 +19,7 @@ namespace Models.ViewMoldels.Exam
         public string Topic { get; set; }
         public float FullMarks { get; set; }
         public DateTime Duration { get; set; }
+        public bool IsDeleted { get; set; }
 
     }
 }

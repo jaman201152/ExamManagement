@@ -1,11 +1,10 @@
-﻿@using System.Web.Mvc.Html
+﻿@using System.Collections.Specialized
+@using System.Web.Mvc.Html
 @model Models.ViewMoldels.Batch.BatchCreateVM
 
 @{
     Layout = "~/Views/Dashboard/DashBoard.cshtml";
 }
-
-
 
 
 
@@ -20,104 +19,109 @@
                             <li><a href="#">Add New Batch</a></li>
                         </ul>
 
-                        <div>
-                            <div class="box span8">
-                                <div class="box-header" data-original-title>
-                                    <h2><i class="halflings-icon edit"></i><span class="break"></span>Batch Manage</h2>
-                                    <div class="box-icon">
-                                        <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
-                                        <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-                                        <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
-                                    </div>
-                                </div>
-                                <div class="box-content">
-                                    <form method="POST" id="BatchCreateForm">
+<div>
+    <div class="box span8">
+        <div class="box-header" data-original-title>
+            <h2><i class="halflings-icon edit"></i><span class="break"></span>Batch Manage</h2>
+            <div class="box-icon">
+                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+            </div>
+        </div>
+        <div class="box-content">
+            <form method="POST" id="BatchCreateForm">
 
-                                        <div class="container">
+                <div class="container">
 
-                                            <div class="form-horizontal">
-                                                @Html.ValidationSummary(true, null, new { @class = "text-danger " })
-                                                <div class="form-group">
-                                                    <label for="Name" class="col-md-2">Oganization Name</label>
-                                                    <div class="col-md-10">
-                                                        @Html.DropDownListFor(c => c.OrganizationId, Model.selectListOrganization, new { @class = "input-xlarge" })
-                                                        @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="Name" class="col-md-2">Course Name</label>
-                                                    <div class="col-md-10">
-                                                        <select id="CourseId" name="CourseId" class="input-xlarge"><option>..Select..</option></select>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-group">
-                                                    <label for="Name" class="col-md-2">Batch No</label>
-                                                    <div class="col-md-10">
-                                                        @Html.TextBoxFor(c => c.BatchNo, new { @class = "form-control input-xlarge" })
-                                                        @Html.ValidationMessageFor(c => c.BatchNo)
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Code" class="col-md-2">Description</label>
-                                                    <div class="col-md-10">
-                                                        @Html.TextAreaFor(c => c.Description, new { @class = "form-control cleditor" })
-                                                    
-                                                        @Html.ValidationMessageFor(c => c.Description)
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="CourseDuration" class="col-md-2">Course Duration</label>
-                                                    <div class="col-md-10">
-                                                        @Html.TextBoxFor(c => c.StartDate, new { @class = "form-control input-xlarge datepicker", value="18/09/2018" })
-                                                        @Html.ValidationMessageFor(c => c.StartDate)
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Credit" class="col-md-2">Credit</label>
-                                                    <div class="col-md-10">
-                                                        @Html.TextBoxFor(c => c.EndDate, new { @class = "form-control  input-xlarge datepicker" })
-                                                        @Html.ValidationMessageFor(c => c.EndDate)
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Credit" class="col-md-2"></label>
-                                                    <div class="col-md-10">
-                                                        @Html.TextBoxFor(c => c.IsDeleted, new { @class = "form-control", value="True" })
-                                                        @Html.ValidationMessageFor(c => c.IsDeleted)
-                                                    </div>
-                                                </div>
-
-                                                <br />
-                                                <div class="form-group">
-                                                    <input type="submit" class="btn btn-primary col-md-offset-2" />
-                                                    
-                                                    
-                                                    <!-- Start Loader and Saving Message -->
-                                                    <span class="custom_loader">
-                                                        <i class="fa fa-refresh fa-spin"></i>
-                                                        Saving please Wait ...
-                                                    </span>
-                                                    <div class="msgSaved" style="color: green" class="text-center"></div>
-                                                    <div class="msgNotSaved" style="color: red" class="text-center"></div>
-                                                    <!-- End Loader and Saving Message -->
-                                                    
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </form>
-
-                                </div>
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, null, new { @class = "text-danger " })
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Oganization Name</label>
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(c => c.OrganizationId, Model.selectListOrganization, new { @class = "input-xlarge" })
+                                @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
                             </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Course Name</label>
+                            <div class="col-md-10">
+                                <select id="CourseId" name="CourseId" class="input-xlarge"><option>..Select..</option></select>
+                            </div>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="Name" class="col-md-2">Batch No</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.BatchNo, new { @class = "form-control input-xlarge" })
+                                @Html.ValidationMessageFor(c => c.BatchNo)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Code" class="col-md-2">Description</label>
+                            <div class="col-md-10">
+                                @Html.TextAreaFor(c => c.Description, new { @class = "form-control cleditor" })
+                                                    
+                                @Html.ValidationMessageFor(c => c.Description)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="CourseDuration" class="col-md-2">Course Duration</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.StartDate, new { @class = "form-control input-xlarge datepicker", value="18/09/2018" })
+                                @Html.ValidationMessageFor(c => c.StartDate)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Credit" class="col-md-2">Credit</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.EndDate, new { @class = "form-control  input-xlarge datepicker" })
+                                @Html.ValidationMessageFor(c => c.EndDate)
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Credit" class="col-md-2"></label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(c => c.IsDeleted, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(c => c.IsDeleted)
+                            </div>
+                        </div>
 
-
-
+                        <br />
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary col-md-offset-2" />
+                                                    
+                                                    
+                            <!-- Start Loader and Saving Message -->
+                            <span class="custom_loader">
+                                <i class="fa fa-refresh fa-spin"></i>
+                                Saving please Wait ...
+                            </span>
+                            <div class="msgSaved" style="color: green" class="text-center"></div>
+                            <div class="msgNotSaved" style="color: red" class="text-center"></div>
+                            <!-- End Loader and Saving Message -->
+                                                    
 
                         </div>
+
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+@section scripts{
+
+}
+
+
 
                     

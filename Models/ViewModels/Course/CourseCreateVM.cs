@@ -24,7 +24,7 @@ namespace Models.ViewMoldels.Course
         public string Credit { get; set; }
         public string OutLine { get; set; }
         public string Tags { get; set; }
-      
+        public bool IsDeleted { get; set; }
         public IEnumerable<SelectListItem> SelectListItemsOrganization { get; set; } 
 
     }

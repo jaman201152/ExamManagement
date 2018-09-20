@@ -29,5 +29,10 @@ namespace Repository
 
         }
 
+       public Organization GetById(int id)
+       {
+           Organization organization = db.Organizations.Find(id);
+           return organization;
+       }
     }
 }

@@ -62,6 +62,10 @@
     <Compile Include="Migrations\201809170754149_Batch_Exam_Participant_Trainer_ModelCreated.Designer.cs">
       <DependentUpon>201809170754149_Batch_Exam_Participant_Trainer_ModelCreated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809200415008_Add isdeleted field in all fields.cs" />
+    <Compile Include="Migrations\201809200415008_Add isdeleted field in all fields.Designer.cs">
+      <DependentUpon>201809200415008_Add isdeleted field in all fields.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineExamDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,6 +92,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809170754149_Batch_Exam_Participant_Trainer_ModelCreated.resx">
       <DependentUpon>201809170754149_Batch_Exam_Participant_Trainer_ModelCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809200415008_Add isdeleted field in all fields.resx">
+      <DependentUpon>201809200415008_Add isdeleted field in all fields.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

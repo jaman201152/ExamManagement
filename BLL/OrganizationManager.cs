@@ -29,5 +29,9 @@ namespace BLL
         }
 
 
+       public Organization GetById(int id)
+       {
+           return _organizationRepository.GetById(id);
+       }
     }
 }

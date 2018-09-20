@@ -356,7 +356,25 @@
 
                             </ul>
                         </li>
-                        <li><a href="#" id=""><i class="icon-eye-open"></i><span class="hidden-tablet"> Participants</span></a></li>
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Participant</span><span class="pull-right"> << </span></a>
+                            <ul>
+                                <li><a class="submenu" href="~/Participant/AddParticipant" id=""><i class=""></i><span class="hidden-tablet"> Add New Participants</span></a></li>
+                                <li><a class="submenu" href="#"><i class=""></i><span class="hidden-tablet"> Manage Participants</span></a></li>
+
+
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Trainer</span><span class="pull-right"> << </span></a>
+                            <ul>
+                                <li><a class="submenu" href="#" id=""><i class=""></i><span class="hidden-tablet"> Add New Trainer</span></a></li>
+                                <li><a class="submenu" href="#"><i class=""></i><span class="hidden-tablet"> Manage Trainers</span></a></li>
+
+                            </ul>
+                        </li>
+                   
                         @*<li><a href="widgets.html"><i class="icon-dashboard"></i><span class="hidden-tablet"> Widgets</span></a></li>
                         <li>
                             <a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Dropdown</span><span class="label label-important"> 3 </span></a>
@@ -492,16 +510,26 @@
     <script src="~/Scripts/js/retina.js"></script>
     <script src="~/Scripts/js/custom.js"></script>
 <!-- end: JavaScript-->
+        
+    <!-- For Validation -->
 
+        <script src="~/Scripts/jquery.validate.js"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+        
+    <!-- End For Validation -->
+        
 
-
-<!-- Custom Scripts By Kamruzzaman -->
+    <!-- Custom Scripts By Kamruzzaman -->
     
     <script src="~/Scripts/CustomScripts/Organization/Orgnization.js"></script>
+
+    <script src="~/Scripts/CustomScripts/Course/CourseManage.js"></script>
+    <script src="~/Scripts/CustomScripts/Participant/ParticipantManage.js"></script>
     <script src="~/Scripts/CustomScripts/Batch/BatchManage.js"></script>
-        <script src="~/Scripts/CustomScripts/Course/CourseManage.js"></script>
-
-
+        
+<!-- End Custom Scripts by Kamruzzaman -->
+        
+        @RenderSection("scripts",false);
 
 </body>
 </html>

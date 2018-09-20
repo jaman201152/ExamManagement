@@ -18,180 +18,166 @@
     <li><a href="#">Organization</a></li>
 </ul>
 
-<div>
 
-    <div class="box span5">
-        <div class="box-header" data-original-title>
-            <h2><i class="halflings-icon edit"></i><span class="break"></span>Organization Form</h2>
-            <div class="box-icon">
-                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
-                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
-            </div>
+
+<div class="box span4">
+    <div class="box-header" data-original-title>
+        <h2><i class="halflings-icon edit"></i><span class="break"></span>Organization Form</h2>
+        <div class="box-icon">
+            <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+            <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+            <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
         </div>
-        <div class="box-content">
+    </div>
+    <div class="box-content">
 
-            <form method="POST" id="organizationCreateForm">
+        <form method="POST" id="organizationCreateForm">
+            
 
-                <div class="container">
+            <div class="container">
 
-                    <div class="form-horizontal">
-                        @Html.ValidationSummary(true, null, new { @class = "text-danger" })
-                        <div class="form-group">
-                            <label for="Name" class="col-md-2">Name</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control", id = "StudentName" })
-                                @Html.ValidationMessageFor(c => c.Name, null, new { @class = "text-danger" })
-                            </div>
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                    <div class="form-group">
+                        <label for="Name" class="col-md-4">Name</label>
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge", id = "OrgName" })
+                            @Html.ValidationMessageFor(c => c.Name, null, new { @class = "text-danger" })
                         </div>
-                        <div class="form-group">
-                            <label for="Code" class="col-md-2">Code</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Code, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.Code)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="ContactNo" class="col-md-2">Contact No</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.ContactNo, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.ContactNo)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Address" class="col-md-2">Address</label>
-                            <div class="col-md-10">
-                                @Html.TextAreaFor(c => c.Address, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.Address)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="About" class="col-md-2">About</label>
-                            <div class="col-md-10">
-                                @Html.TextAreaFor(c => c.About, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.About)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Logo" class="col-md-2">Logo</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.LogoName, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.LogoName)
-                            </div>
-                        </div>
-                        <br />
-                        <div class="form-group">
-
-                            <input type="submit" class="btn btn-primary col-md-offset-2"/>
-
-                            <span class="custom_loader">
-                                <i class="fa fa-refresh fa-spin"></i>
-                                Saving please Wait ...
-                            </span>
-                            <div class="msgSaved" style="color: green" class="text-center"></div>
-                            <div class="msgNotSaved" style="color: red" class="text-center"></div>
-                        </div>
-
                     </div>
+                    <div class="form-group">
+                        <label for="Code" class="col-md-2">Code</label>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(c => c.Code, new { @class = "form-control input-xlarge" })
+                            @Html.ValidationMessageFor(c => c.Code)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="ContactNo" class="col-md-2">Contact No</label>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(c => c.ContactNo, new { @class = "form-control input-xlarge" })
+                            @Html.ValidationMessageFor(c => c.ContactNo)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Address" class="col-md-2">Address</label>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(c => c.Address, new { @class = "form-control input-xlarge" })
+                            @Html.ValidationMessageFor(c => c.Address)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="About" class="col-md-2">About</label>
+                        <div class="col-md-10">
+                            @Html.TextAreaFor(c => c.About, new { @class = "form-control input-xlarge" })
+                            @Html.ValidationMessageFor(c => c.About)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Logo" class="col-md-2">Logo</label>
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(c => c.LogoName, new { @class = "form-control input-xlarge" })
+                            @Html.ValidationMessageFor(c => c.LogoName)
+                        </div>
+                    </div>
+
+                  
+
+                    <br />
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary col-md-offset-2" />
+                        <span class="custom_loader">
+                            <i class="fa fa-refresh fa-spin"></i>
+                            Saving please Wait ...
+                        </span>
+                        <div class="msgSaved" style="color: green" class="text-center"></div>
+                        <div class="msgNotSaved" style="color: red" class="text-center"></div>
+                    </div>
+
                 </div>
-            </form>
-
-            
-
-        </div>
-    </div>
-    
-    
-    @*<div class="box span7">
-        <div class="box-header" data-original-title>
-            <h2><i class="halflings-icon user"></i><span class="break"></span>Organization Details</h2>
-            <div class="box-icon">
-                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
-                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
             </div>
-        </div>
-        <div class="box-content">
+        </form>
 
-            <table class="table table-striped table-bordered bootstrap-datatable datatable">
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Date registered</th>
-                        <th>Role</th>
-                        <th>Status</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Dennis Ji</td>
-                        <td class="center">2012/01/01</td>
-                        <td class="center">Member</td>
-                        <td class="center">
-                            <span class="label label-success">Active</span>
-                        </td>
-                        <td class="center">
-                            <a class="btn btn-success" href="#">
-                                <i class="halflings-icon white zoom-in"></i>
-                            </a>
-                            <a class="btn btn-info" href="#">
-                                <i class="halflings-icon white edit"></i>
-                            </a>
-                            <a class="btn btn-danger" href="#">
-                                <i class="halflings-icon white trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Dennis Ji</td>
-                        <td class="center">2012/01/01</td>
-                        <td class="center">Member</td>
-                        <td class="center">
-                            <span class="label label-success">Active</span>
-                        </td>
-                        <td class="center">
-                            <a class="btn btn-success" href="#">
-                                <i class="halflings-icon white zoom-in"></i>
-                            </a>
-                            <a class="btn btn-info" href="#">
-                                <i class="halflings-icon white edit"></i>
-                            </a>
-                            <a class="btn btn-danger" href="#">
-                                <i class="halflings-icon white trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Dennis Ji</td>
-                        <td class="center">2012/01/01</td>
-                        <td class="center">Member</td>
-                        <td class="center">
-                            <span class="label label-success">Active</span>
-                        </td>
-                        <td class="center">
-                            <a class="btn btn-success" href="#">
-                                <i class="halflings-icon white zoom-in"></i>
-                            </a>
-                            <a class="btn btn-info" href="#">
-                                <i class="halflings-icon white edit"></i>
-                            </a>
-                            <a class="btn btn-danger" href="#">
-                                <i class="halflings-icon white trash"></i>
-                            </a>
-                        </td>
-                        </td>
-                    </tr>
-                </tbody>
-            
-            </table>
 
+    </div>
+</div>
+
+
+<div class="box span7">
+    <div class="box-header" data-original-title>
+        <h2><i class="halflings-icon user"></i><span class="break"></span>Organization Details</h2>
+        <div class="box-icon">
+            <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+            <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+            <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
         </div>
     </div>
+    <div class="box-content">
 
-        </div>*@
 
-       
+
+
+        <table class="table table-striped table-bordered bootstrap-datatable datatable">
+            <thead>
+                <tr>
+                    <th>Organization Name</th>
+                    <th>Code</th>
+                    <th>Address</th>
+                    <th>Contact No</th>
+                    <th>About</th>
+                    <th>Logo Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @if (Model != null && Model.Organizations != null && Model.Organizations.Count > 0)
+                {
+                    foreach (var organization in Model.Organizations)
+                    {
+                        <tr>
+                            <td>@organization.Name</td>
+                            <td class="center">@organization.Code</td>
+                            <td class="center">@organization.Address</td>
+                            <td class="center">@organization.ContactNo</td>
+                            <td class="center">@organization.About</td>
+                            <td class="center">@organization.LogoName</td>
+                         <td class="center">
+                                <a class="btn btn-success" href="#">
+                                    <i class="halflings-icon white zoom-in"></i>
+                                </a>
+                                <a class="btn btn-info" href="#">
+                                    <i class="halflings-icon white edit"></i>
+                                </a>
+                                <a class="btn btn-danger" href="#">
+                                    <i class="halflings-icon white trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
+
+                }
+
+
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+</div>
+
+
+<script type="text/javascript" language="javascript">
+    $.validator.unobtrusive.parse(document);
+</script>
+
+
+
+
+
 
 
 

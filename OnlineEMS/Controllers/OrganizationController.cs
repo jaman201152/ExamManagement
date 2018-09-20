@@ -24,7 +24,11 @@ namespace OnlineEMS.Controllers
 
            // return PartialView("~/Views/Shared/Organization/_OrganizationPartialCreate.cshtml",organization);
 
-            return PartialView("~/Views/Shared/Organization/_OrganizationPartialCreate.cshtml");
+
+            var model = new OrganizationCreateVM();
+            model.Organizations = _organizationManager.GetAll();
+
+            return PartialView("~/Views/Shared/Organization/_OrganizationPartialCreate.cshtml",model);
 
         }
 
@@ -54,10 +58,20 @@ namespace OnlineEMS.Controllers
         }
 
 
-        public ActionResult Details()
+        public ActionResult Details(int id)
         {
+            var organization = _organizationManager.GetById(id);
 
-            return View();
+            return View(organization);
+        }
+
+        public ActionResult AllOrganizationDetails()
+        {
+            List<Organization> organization = _organizationManager.GetAll();
+            
+            //var model = Mapper.Map<OrganizationCreateVM>(organization);
+           
+            return View(organization);
         }
 
       

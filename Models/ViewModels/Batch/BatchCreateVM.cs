@@ -19,7 +19,7 @@ namespace Models.ViewMoldels.Batch
         public bool IsDeleted { get; set; }
 
         public IEnumerable<SelectListItem> selectListOrganization { get; set; }
-
+        
 
     }
 }

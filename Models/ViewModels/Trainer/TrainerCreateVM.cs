@@ -4,13 +4,15 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace Models.ViewMoldels.Participants
 {
    public class ParticipantsCreateVM
     {
+       
 
-        public int Id { get; set; }
+       public int Id { get; set; }
         [Required]
         public int OrganizationId { get; set; }
         [Required]
@@ -29,6 +31,10 @@ namespace Models.ViewMoldels.Participants
         public string PostalCode { get; set; }
         public string Country { get; set; }
         public string Image { get; set; }
+        public bool IsDeleted { get; set; }
+
+        public IEnumerable<SelectListItem> selectListOrganization;
+        public IEnumerable<SelectListItem> selectListCourse { get; set; } 
 
     }
 }
