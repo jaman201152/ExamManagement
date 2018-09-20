@@ -65,14 +65,51 @@ namespace OnlineEMS.Controllers
             return View(organization);
         }
 
-        public ActionResult AllOrganizationDetails()
+        public PartialViewResult AllOrganizationDetails()
         {
-            List<Organization> organization = _organizationManager.GetAll();
-            
-            //var model = Mapper.Map<OrganizationCreateVM>(organization);
-           
+            var model = new OrganizationCreateVM();
+            model.Organizations = _organizationManager.GetAll();
+
+            return PartialView("~/Views/Shared/Organization/_OrganizationPartialDetails.cshtml", model);
+
+        }
+
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            Organization organization = new Organization();
+            if (id > 0)
+            {
+                organization = _organizationManager.GetById(id);
+            }
+
+
+
             return View(organization);
         }
+
+
+        [HttpPost]
+        public ActionResult Edit(Organization organization)
+        {
+            var isUpdated = _organizationManager.Update(student);
+
+
+          
+
+    
+
+            if (isUpdated)
+            {
+                ViewBag.Msg = "Success";
+                return View(student);
+            }
+
+            ViewBag.Msg = "Failed";
+            return View(student);
+        }
+
 
       
 

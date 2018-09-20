@@ -13,9 +13,9 @@ $(document).ready(function () {
             url: "../../Batch/GetBatchManageForm",
             contentType: "application/JSON; charset=utf-8",
             data: JSON.stringify(),
-            success: function (Data) {
+            success: function (data) {
 
-                $("#pView").html(Data);
+                $("#pView").html(data);
                 $(".custom_loader").hide();
 
             }

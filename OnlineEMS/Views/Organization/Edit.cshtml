@@ -1,9 +1,9 @@
 ﻿@using System.Web.Mvc.Html
 
-@model Models.ViewMoldels.Organization.OrganizationCreateVM
+@model Models.Organization
 
 @{
-    Layout = null;
+    Layout = "~/Views/Dashboard/DashBoard.cshtml";
 }
 
 
@@ -35,7 +35,14 @@
 
 
             <div class="container">
-
+                @if (ViewBag.Msg == "Success")
+                {
+                    <h1 style="color: green" class="text-center"> Saved Successfull!</h1>
+                }
+                else if (ViewBag.Msg == "Failed")
+                {
+                    <h1 style="color: red" class="text-center"> Sorry failed!</h1>
+                }
                 <div class="form-horizontal">
                     @Html.ValidationSummary(true, null, new { @class = "text-danger" })
 
@@ -90,7 +97,7 @@
                     <br />
 
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary col-md-offset-2" />
+                        <input type="submit" class="btn btn-primary col-md-offset-2" value="Save Changes" />
                         <span class="custom_loader">
                             <i class="fa fa-refresh fa-spin"></i>
                             Saving please Wait ...
@@ -106,67 +113,3 @@
 
     </div>
 </div>
-
-
-<div class="box span7">
-    <div class="box-header" data-original-title>
-        <h2><i class="halflings-icon user"></i><span class="break"></span>Organization Details</h2>
-        <div class="box-icon">
-            <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
-            <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-            <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
-        </div>
-    </div>
-    <div class="box-content">
-
-
-        <div id="OrganizationDetails">
-
-        </div>
-
-    </div>
-</div>
-
-
-<script type="text/javascript" language="javascript">
-
-    $(document).ready(function () {
-
-
-        function OrganizationDetails() {
-
-            $.ajax({
-                type: "POST",
-                url: "../../Organization/AllOrganizationDetails",
-                contentType: "application/JSON; charset=utf-8",
-                data: JSON.stringify(),
-                success: function (data) {
-
-                    $("#OrganizationDetails").html(data);
-                    $(".custom_loader").hide();
-
-                }
-
-            });
-
-        }
-
-        OrganizationDetails();
-
-
-    });
-
-
-
-    $.validator.unobtrusive.parse(document);
-</script>
-
-
-
-
-
-
-
-
-
-
