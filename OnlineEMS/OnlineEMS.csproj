@@ -303,6 +303,7 @@
     <Content Include="Views\Organization\AllOrganizationDetails.cshtml" />
     <Content Include="Views\Shared\Organization\_OrganizationPartialDetails.cshtml" />
     <Content Include="Views\Organization\Edit.cshtml" />
+    <Content Include="Views\Organization\OrganizationDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

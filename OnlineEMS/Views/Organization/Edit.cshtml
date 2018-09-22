@@ -20,7 +20,7 @@
 
 
 
-<div class="box span4">
+<div class="box span6">
     <div class="box-header" data-original-title>
         <h2><i class="halflings-icon edit"></i><span class="break"></span>Organization Form</h2>
         <div class="box-icon">
@@ -31,79 +31,86 @@
     </div>
     <div class="box-content">
 
-        <form method="POST" id="organizationCreateForm">
 
-
+        <form method="POST">
+         
             <div class="container">
-                @if (ViewBag.Msg == "Success")
-                {
-                    <h1 style="color: green" class="text-center"> Saved Successfull!</h1>
-                }
-                else if (ViewBag.Msg == "Failed")
-                {
-                    <h1 style="color: red" class="text-center"> Sorry failed!</h1>
-                }
+           
                 <div class="form-horizontal">
-                    @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                    @Html.ValidationSummary(true, null, new {@class = "text-danger"})
+                    
+                    
+                    <div class="form-group">
+                        <label for="Name" class="col-md-6">
+                            @if (ViewBag.Msg == "Success")
+                            {
+                                <span style="color: green" class="text-center">Successfully Updated!</span>
+                            }
+                            else if (ViewBag.Msg == "Failed")
+                            {
+                                <span style="color: red" class="text-center"> Sorry failed!</span>
+                            }
+                        </label>
+                        <div class="col-md-6">
+                        </div>
+
+                     
+
+                    </div>
+                   
 
                     <div class="form-group">
                         <label for="Name" class="col-md-4">Name</label>
                         <div class="col-md-8">
-                            @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge", id = "OrgName" })
+                            @Html.TextBoxFor(c => c.Name, new {@class = "form-control input-xlarge", id = "OrgName"})
                         </div>
 
-                        @Html.ValidationMessageFor(c => c.Name, null, new { @class = "help-inline", style = "color:red" })
+                        @Html.ValidationMessageFor(c => c.Name, null, new {@class = "help-inline", style = "color:red"})
 
                     </div>
                     <div class="form-group">
                         <label for="Code" class="col-md-2">Code</label>
                         <div class="col-md-10">
-                            @Html.TextBoxFor(c => c.Code, new { @class = "form-control input-xlarge" })
+                            @Html.TextBoxFor(c => c.Code, new {@class = "form-control input-xlarge"})
 
                         </div>
-                        @Html.ValidationMessageFor(c => c.Code, null, new { @class = "help-inline", style = "color:red" })
+                        @Html.ValidationMessageFor(c => c.Code, null, new {@class = "help-inline", style = "color:red"})
                     </div>
                     <div class="form-group">
                         <label for="ContactNo" class="col-md-2">Contact No</label>
                         <div class="col-md-10">
-                            @Html.TextBoxFor(c => c.ContactNo, new { @class = "form-control input-xlarge" })
+                            @Html.TextBoxFor(c => c.ContactNo, new {@class = "form-control input-xlarge"})
                             @Html.ValidationMessageFor(c => c.ContactNo)
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="Address" class="col-md-2">Address</label>
                         <div class="col-md-10">
-                            @Html.TextAreaFor(c => c.Address, new { @class = "form-control input-xlarge" })
+                            @Html.TextAreaFor(c => c.Address, new {@class = "form-control input-xlarge"})
                             @Html.ValidationMessageFor(c => c.Address)
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="About" class="col-md-2">About</label>
                         <div class="col-md-10">
-                            @Html.TextAreaFor(c => c.About, new { @class = "form-control input-xlarge" })
+                            @Html.TextAreaFor(c => c.About, new {@class = "form-control input-xlarge"})
                             @Html.ValidationMessageFor(c => c.About)
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="Logo" class="col-md-2">Logo</label>
                         <div class="col-md-10">
-                            @Html.TextBoxFor(c => c.LogoName, new { @class = "form-control input-xlarge" })
+                            @Html.TextBoxFor(c => c.LogoName, new {@class = "form-control input-xlarge"})
                             @Html.ValidationMessageFor(c => c.LogoName)
                         </div>
                     </div>
 
 
 
-                    <br />
+                    <br/>
 
                     <div class="form-group">
-                        <input type="submit" class="btn btn-primary col-md-offset-2" value="Save Changes" />
-                        <span class="custom_loader">
-                            <i class="fa fa-refresh fa-spin"></i>
-                            Saving please Wait ...
-                        </span>
-                        <div class="msgSaved" style="color: green" class="text-center"></div>
-                        <div class="msgNotSaved" style="color: red" class="text-center"></div>
+                        <input type="submit" class="btn btn-primary col-md-offset-2" value="Save Changes"/>
                     </div>
 
                 </div>

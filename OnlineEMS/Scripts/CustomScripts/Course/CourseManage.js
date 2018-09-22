@@ -5,7 +5,7 @@ $(document).ready(function () {
 
 
     $("#CoursePartialCreate").click(function () {
-
+        $(".custom_loader").show();
         $.ajax({
             type: "GET",
             url: "../../Course/EntryForm",

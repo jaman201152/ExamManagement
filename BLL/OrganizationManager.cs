@@ -29,10 +29,29 @@ namespace BLL
 
         }
 
+        public List<Organization> GetOrganizationLastFive()
+        {
+
+            return _organizationRepository.GetOrganizationLastFive();
+
+        }
+
 
        public Organization GetById(int id)
        {
            return _organizationRepository.GetById(id);
        }
+
+        public bool Update(Organization organization)
+        {
+            return _organizationRepository.Update(organization);
+        }
+
+        public bool Delete(int id)
+        {
+            return _organizationRepository.Delete(id);
+        }
+
+       
     }
 }

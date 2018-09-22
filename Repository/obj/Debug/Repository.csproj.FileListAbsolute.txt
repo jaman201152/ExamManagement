@@ -78,3 +78,19 @@ G:\GitManage\OnlineEMS\Repository\bin\Debug\System.Web.Mvc.xml
 G:\GitManage\OnlineEMS\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
 G:\GitManage\OnlineEMS\Repository\obj\Debug\Repository.dll
 G:\GitManage\OnlineEMS\Repository\obj\Debug\Repository.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\Repository.dll.config
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\Repository.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\Repository.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\EntityFramework.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\Models.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\System.Web.Mvc.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\Models.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\EntityFramework.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\bin\Debug\System.Web.Mvc.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\obj\Debug\Repository.csprojResolveAssemblyReference.cache
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\obj\Debug\Repository.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Repository\obj\Debug\Repository.pdb

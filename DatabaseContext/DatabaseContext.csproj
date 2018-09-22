@@ -66,6 +66,10 @@
     <Compile Include="Migrations\201809200415008_Add isdeleted field in all fields.Designer.cs">
       <DependentUpon>201809200415008_Add isdeleted field in all fields.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809220835574_Batch_Model_Required_Anntation_Added.cs" />
+    <Compile Include="Migrations\201809220835574_Batch_Model_Required_Anntation_Added.Designer.cs">
+      <DependentUpon>201809220835574_Batch_Model_Required_Anntation_Added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineExamDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809200415008_Add isdeleted field in all fields.resx">
       <DependentUpon>201809200415008_Add isdeleted field in all fields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809220835574_Batch_Model_Required_Anntation_Added.resx">
+      <DependentUpon>201809220835574_Batch_Model_Required_Anntation_Added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

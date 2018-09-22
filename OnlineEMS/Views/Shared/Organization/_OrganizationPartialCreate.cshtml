@@ -35,7 +35,7 @@
 
 
             <div class="container">
-
+               
                 <div class="form-horizontal">
                     @Html.ValidationSummary(true, null, new { @class = "text-danger" })
 
@@ -43,6 +43,7 @@
                         <label for="Name" class="col-md-4">Name</label>
                         <div class="col-md-8">
                             @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge", id = "OrgName" })
+                       
                         </div>
 
                         @Html.ValidationMessageFor(c => c.Name, null, new { @class = "help-inline", style = "color:red" })
@@ -110,7 +111,7 @@
 
 <div class="box span7">
     <div class="box-header" data-original-title>
-        <h2><i class="halflings-icon user"></i><span class="break"></span>Organization Details</h2>
+        <h2><i class="halflings-icon user"></i><span class="break"></span>Last Five Entries Organization Details </h2>
         <div class="box-icon">
             <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
             <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -118,7 +119,6 @@
         </div>
     </div>
     <div class="box-content">
-
 
         <div id="OrganizationDetails">
 
@@ -137,7 +137,7 @@
 
             $.ajax({
                 type: "POST",
-                url: "../../Organization/AllOrganizationDetails",
+                url: "../../Organization/GetOrganizationLastFive",
                 contentType: "application/JSON; charset=utf-8",
                 data: JSON.stringify(),
                 success: function (data) {

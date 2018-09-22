@@ -73,3 +73,18 @@ G:\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.xml
 G:\GitManage\OnlineEMS\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 G:\GitManage\OnlineEMS\BLL\obj\Debug\BLL.dll
 G:\GitManage\OnlineEMS\BLL\obj\Debug\BLL.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\BLL.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\BLL.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\Models.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\Repository.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\System.Web.Mvc.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\Models.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\Repository.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\System.Web.Mvc.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.pdb

@@ -35,28 +35,35 @@
 
                     <div class="form-horizontal">
                         @Html.ValidationSummary(true, null, new { @class = "text-danger" })
+                        <!-- Start Loader and Saving Message -->
+                        <span class="custom_loader">
+                            <i class="fa fa-refresh fa-spin"></i>
+                            Saving please Wait ...
+                        </span>
                         <div class="form-group">
                             <label for="Name" class="col-md-2">Oganization Name</label>
                             <div class="col-md-10">
                                 @Html.DropDownListFor(c => c.OrganizationId, Model.SelectListItemsOrganization, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
+                          
                             </div>
+                            @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "help-inline", style = "color:red" })
                         </div>
 
                         <div class="form-group">
                             <label for="Name" class="col-md-2">Name</label>
                             <div class="col-md-10">
                                 @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.Name)
                             </div>
+                            @Html.ValidationMessageFor(c => c.Name, null, new { @class = "help-inline", style = "color:red" })
                         </div>
 
                         <div class="form-group">
                             <label for="Code" class="col-md-2">Code</label>
                             <div class="col-md-10">
                                 @Html.TextBoxFor(c => c.Code, new { @class = "form-control" })
-                                @Html.ValidationMessageFor(c => c.Code)
+                            
                             </div>
+                            @Html.ValidationMessageFor(c => c.Code, null, new { @class = "help-inline", style = "color:red" })
                         </div>
                         <div class="form-group">
                             <label for="CourseDuration" class="col-md-2">Course Duration</label>
@@ -115,8 +122,63 @@
             </form>
             
         </div>
+    </div>
+    
+    <div class="box span7">
+        <div class="box-header" data-original-title>
+            <h2><i class="halflings-icon user"></i><span class="break"></span>Last Five Entries of Course</h2>
+            <div class="box-icon">
+                <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+                <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+                <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+            </div>
         </div>
+        <div class="box-content">
+
+            <div id="CourseDetails">
+
+            </div>
 
         </div>
+    </div>
+
+</div>
+
+
+
+<script type="text/javascript" language="javascript">
+
+    $(document).ready(function () {
+
+
+        function CourseDetails() {
+
+            $.ajax({
+                type: "POST",
+                url: "../../Course/GetCourseLastFive",
+                contentType: "application/JSON; charset=utf-8",
+                data: JSON.stringify(),
+                success: function (data) {
+
+                    $("#CourseDetails").html(data);
+                    $(".custom_loader").hide();
+
+                }
+
+            });
+
+        }
+
+        CourseDetails();
+
+
+    });
+
+
+
+    $.validator.unobtrusive.parse(document);
+</script>
+
+
 
 

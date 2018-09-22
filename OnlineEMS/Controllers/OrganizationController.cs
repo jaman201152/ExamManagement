@@ -40,9 +40,11 @@ namespace OnlineEMS.Controllers
             {
 
                 var organization = Mapper.Map<Organization>(orgVm);
+                
 
 
                 bool isAdded = _organizationManager.Add(organization);
+
                 if (isAdded)
                 {
                    return "Successfully Saved!";
@@ -65,13 +67,20 @@ namespace OnlineEMS.Controllers
             return View(organization);
         }
 
-        public PartialViewResult AllOrganizationDetails()
+        public PartialViewResult GetOrganizationLastFive()
         {
             var model = new OrganizationCreateVM();
-            model.Organizations = _organizationManager.GetAll();
+            model.Organizations = _organizationManager.GetOrganizationLastFive();
 
             return PartialView("~/Views/Shared/Organization/_OrganizationPartialDetails.cshtml", model);
 
+        }
+
+        public ActionResult OrganizationDetails()
+        {
+            var model = new OrganizationCreateVM();
+            model.Organizations = _organizationManager.GetAll();
+            return View(model);
         }
 
 
@@ -93,21 +102,38 @@ namespace OnlineEMS.Controllers
         [HttpPost]
         public ActionResult Edit(Organization organization)
         {
-            var isUpdated = _organizationManager.Update(student);
 
-
-          
-
-    
+        
+            var isUpdated = _organizationManager.Update(organization);
+             
 
             if (isUpdated)
             {
                 ViewBag.Msg = "Success";
-                return View(student);
+                return View(organization);
             }
 
             ViewBag.Msg = "Failed";
-            return View(student);
+            return View(organization);
+
+        }
+
+
+        public ActionResult Delete(int id)
+        {
+          
+            if (id > 0)
+            {
+                var isDeleted = _organizationManager.Delete(id);
+                if (isDeleted)
+                {
+                    ViewBag.Msg = "Success";
+                    return RedirectToAction("OrganizationDetails");
+                }
+            }
+
+            ViewBag.Msg = "Failed";
+            return RedirectToAction("OrganizationDetails");
         }
 
 

@@ -6,6 +6,7 @@ $(document).ready(function () {
 
     $("#OrganizationPartialCreate").click(function () {
      
+        $(".custom_loader").show();
         $.ajax({
             type: "GET",
             url: "../../Organization/GetOrganizationPartialCreate",
@@ -38,10 +39,11 @@ $(document).ready(function () {
                             $('.msgSaved').html(data);
                             $(".custom_loader").fadeOut();
                             $('#organizationCreateForm').trigger("reset");
+                            getOrganizationLastEight(); // Load Data after Saving
                             setTimeout(function() {
                                 $('.msgSaved').html("");
                                 $('#organizationCreateForm').trigger("reset");
-                                console.log(data);
+                              //  console.log(data);
                             }, 5000);
                       
                         } else {
@@ -50,7 +52,7 @@ $(document).ready(function () {
                             $('#organizationCreateForm').trigger("reset");
                             setTimeout(function () { // this method for msg hide after 5 second
                                 $('.msgNotSaved').html("");
-                                console.log(data);
+                               // console.log(data);
                             }, 5000);
                            
                         }
@@ -61,15 +63,15 @@ $(document).ready(function () {
                     
     });
 
-    function GetAllOrganization() {
+    function getOrganizationLastEight() {
         $.ajax({
             type: "POST",
-            url: "../../Organization/GetAll",
+            url: "../../Organization/GetOrganizationLastFive",
             contentType: "application/JSON; charset=utf-8",
             data: JSON.stringify(),
             success: function (Data) {
 
-                $("#pView").html(Data);
+                $("#OrganizationDetails").html(Data);
                 $(".custom_loader").hide();
 
             }

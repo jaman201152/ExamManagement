@@ -92,3 +92,24 @@ G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.Generate
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Addisdeletedfieldinallfields.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Exam_Participant_Trainer_ModelCreated.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Addisdeletedfieldinallfields.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_Required_Anntation_Added.resources

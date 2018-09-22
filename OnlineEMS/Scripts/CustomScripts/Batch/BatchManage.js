@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $("#BatchPartitalCreate").click(function () {
 
-       
+        $(".custom_loader").show();
 
         $.ajax({
             type: "POST",
