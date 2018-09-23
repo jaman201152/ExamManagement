@@ -28,12 +28,14 @@ namespace Repository
 
         public List<Course> GetAllCourse()
         {
-            List<Course> courses = db.Courses.ToList();
+            List<Course> courses = db.Courses
+                                  .Where(c => c.IsDeleted == false)
+                                  .OrderByDescending(c => c.Id)
+                                  .ToList();
             return courses;
         }
 
-
-
+       
 
         public List<Course> GetCourseByOrganizationId(int id)
         {

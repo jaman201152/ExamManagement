@@ -25,6 +25,9 @@ namespace Models
        public string OutLine { get; set; }
        public string Tags { get; set; }
        public bool IsDeleted { get; set; }
+
+       public virtual Organization Organization { get; set; }
+
        [NotMapped]
        public IEnumerable<SelectListItem> SelectListItemsOrganization { get; set; } 
 

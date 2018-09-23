@@ -113,3 +113,25 @@ E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\Datab
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_Required_Anntation_Added.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll.config
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\DatabaseContext.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\Models.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\Models.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\bin\Debug\System.Web.Mvc.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csprojResolveAssemblyReference.cache
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Organization_Model_Created.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Course_Model_created_Update.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Exam_Participant_Trainer_ModelCreated.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Addisdeletedfieldinallfields.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_Required_Anntation_Added.resources
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.csproj.GenerateResource.Cache
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.CourseModelUpdated.resources

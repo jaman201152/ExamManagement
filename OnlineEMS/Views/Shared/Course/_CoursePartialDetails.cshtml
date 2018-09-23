@@ -1,0 +1,54 @@
+﻿<table class="table table-striped table-bordered bootstrap-datatable datatable">
+    <thead>
+        <tr>
+            <th>SL</th>
+            <th>Course Name</th>
+            <th>Organization</th>
+            <th>Course Code</th>
+            <th>Course Duration</th>
+            <th>Credit</th>
+            <th>OutLine</th>
+            <th>Tags</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @if (Model != null && Model.Courses != null && Model.Courses.Count > 0)
+        {
+            int i = 1;
+
+            foreach (var course in Model.Courses)
+            {
+                <tr>
+                    <td>@(i++)</td>
+                    <td>@course.Name</td>
+                    <td>@course.Organization.Name</td>
+                    <td class="center">@course.Code</td>
+                    <td class="center" width="150">@course.CourseDuration</td>
+                    <td class="center">@course.Credit</td>
+                    <td class="center">@course.OutLine</td>
+                    <td class="center">@course.Tags</td>
+                    <td class="center" width="200">
+                        <a class="btn btn-success" href="/course/Details/@course.Id">
+                            <i class="halflings-icon white zoom-in"></i>
+                        </a>
+                        <a class="btn btn-info" href="/course/Edit/@course.Id">
+                            <i class="halflings-icon white edit"></i>
+                        </a>
+                        <a class="btn btn-danger" href="/course/Delete/@course.Id">
+                            <i class="halflings-icon white trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+
+        }
+
+
+
+
+    </tbody>
+
+</table>
+

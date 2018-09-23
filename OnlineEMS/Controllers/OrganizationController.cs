@@ -42,7 +42,6 @@ namespace OnlineEMS.Controllers
                 var organization = Mapper.Map<Organization>(orgVm);
                 
 
-
                 bool isAdded = _organizationManager.Add(organization);
 
                 if (isAdded)
@@ -73,7 +72,6 @@ namespace OnlineEMS.Controllers
             model.Organizations = _organizationManager.GetOrganizationLastFive();
 
             return PartialView("~/Views/Shared/Organization/_OrganizationPartialDetails.cshtml", model);
-
         }
 
         public ActionResult OrganizationDetails()
@@ -94,7 +92,6 @@ namespace OnlineEMS.Controllers
             }
 
 
-
             return View(organization);
         }
 
@@ -102,7 +99,7 @@ namespace OnlineEMS.Controllers
         [HttpPost]
         public ActionResult Edit(Organization organization)
         {
-
+        
         
             var isUpdated = _organizationManager.Update(organization);
              

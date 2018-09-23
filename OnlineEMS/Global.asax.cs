@@ -23,12 +23,13 @@ namespace OnlineEMS
             {
 
                 conf.CreateMap<OrganizationCreateVM,Organization>();
-
                 conf.CreateMap<Organization,OrganizationCreateVM>();
 
                 conf.CreateMap<CourseCreateVM, Course>();
+                conf.CreateMap<Course, CourseCreateVM>();
 
                 conf.CreateMap<BatchCreateVM, Batch>();
+                conf.CreateMap<Batch, BatchCreateVM>();
 
             });
 

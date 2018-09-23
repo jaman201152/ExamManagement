@@ -5,6 +5,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using Models;
+using Models.ViewMoldels.Course;
 using Repository;
 
 namespace BLL
@@ -25,6 +26,43 @@ namespace BLL
         {
            return _courseRepository.GetAll();
         }
+
+        //public List<Course> CourseDetails()
+        //{
+        //    return _courseRepository.CourseDetails();
+
+        //}
+
+        public IList<Course> CourseDetails()
+        {
+            return _courseRepository.CourseDetails();
+
+        }
+
+        public List<Course> GetCourseLastFive()
+        {
+
+            return _courseRepository.GetCoursesLastFive();
+
+        }
+
+
+        public Course GetById(int id)
+        {
+            return _courseRepository.GetById(id);
+        }
+
+        public bool Update(Course course)
+        {
+            return _courseRepository.Update(course);
+        }
+
+
+        public bool Delete(int id)
+        {
+            return _courseRepository.Delete(id);
+        }
+
 
     }
 }

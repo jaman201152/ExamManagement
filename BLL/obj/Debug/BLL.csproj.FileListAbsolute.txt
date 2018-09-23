@@ -88,3 +88,18 @@ E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.x
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.dll
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\BLL\obj\Debug\BLL.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\BLL.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\BLL.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\Models.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\Repository.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\System.Web.Mvc.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\DatabaseContext.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\Models.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\Repository.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\System.Web.Mvc.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\EntityFramework.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\bin\Debug\DatabaseContext.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\obj\Debug\BLL.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\BLL\obj\Debug\BLL.pdb

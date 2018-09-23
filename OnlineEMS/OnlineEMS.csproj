@@ -304,6 +304,9 @@
     <Content Include="Views\Shared\Organization\_OrganizationPartialDetails.cshtml" />
     <Content Include="Views\Organization\Edit.cshtml" />
     <Content Include="Views\Organization\OrganizationDetails.cshtml" />
+    <Content Include="Views\Course\CourseInformation.cshtml" />
+    <Content Include="Views\Shared\Course\_CoursePartialDetails.cshtml" />
+    <Content Include="Views\Course\EditCourse.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

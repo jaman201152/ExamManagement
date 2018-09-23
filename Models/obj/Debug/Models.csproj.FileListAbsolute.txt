@@ -45,3 +45,15 @@ E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Models\obj\Debug\Models.dll
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\Models\obj\Debug\Models.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\Models.dll.config
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\Models.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\Models.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.SqlServer.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.SqlServer.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.pdb

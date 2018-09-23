@@ -38,6 +38,7 @@ $(document).ready(function () {
                     $(".msgSaved").html(data);
                     $(".custom_loader").fadeOut();
                     $('#CourseCreateForm').trigger("reset");
+                    CourseDetails();
                     setTimeout(function () {
                         $(".msgSaved").html("");
                         $('#CourseCreateForm').trigger("reset");
@@ -48,6 +49,7 @@ $(document).ready(function () {
                     $(".custom_loader").fadeOut();
                     $(".msgNotSaved").html(data);
                     $('#CourseCreateForm').trigger("reset");
+                    CourseDetails();
                     setTimeout(function () { // setTimeout method of jquery for msg hide after 5 second
                         $(".msgNotSaved").html("");
                         console.log(data);
@@ -61,6 +63,27 @@ $(document).ready(function () {
 
 
     });
+
+
+    function CourseDetails() {
+
+        $.ajax({
+            type: "POST",
+            url: "../../Course/GetCourseLastFive",
+            contentType: "application/JSON; charset=utf-8",
+            data: JSON.stringify(),
+            success: function (data) {
+
+                $("#CourseDetails").html(data);
+                $(".custom_loader").hide();
+
+            }
+
+        });
+
+    }
+
+    CourseDetails();
 
 
 });

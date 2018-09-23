@@ -254,3 +254,35 @@ E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\OnlineEMS\bin\DatabaseContext.p
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.csprojResolveAssemblyReference.cache
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.dll
 E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\OnlineEMS.dll.config
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\OnlineEMS.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\OnlineEMS.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\AutoMapper.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\BLL.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\EntityFramework.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\EntityFramework.SqlServer.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\Models.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Helpers.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Mvc.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Razor.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.Deployment.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.Razor.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\Repository.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\DatabaseContext.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\BLL.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\Models.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\AutoMapper.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\EntityFramework.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\EntityFramework.SqlServer.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Razor.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.Deployment.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Webpages.Razor.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Helpers.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\System.Web.Mvc.xml
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\Repository.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\bin\DatabaseContext.pdb
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.csprojResolveAssemblyReference.cache
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.dll
+E:\Kamruzzaman-50\GitManage\OnlineEMS\OnlineEMS\obj\Debug\OnlineEMS.pdb
