@@ -53,7 +53,6 @@ namespace OnlineEMS.Controllers
                 }
             }
 
-           
 
             return "Sorry! Error Occured.";
 

@@ -20,6 +20,7 @@ namespace BLL
 
             return isAdded;
         }
+        
 
 
         public List<Organization> GetAllOrganizations()
@@ -38,5 +39,25 @@ namespace BLL
         {
             return _batchRepository.GetCourseByOrganizationId(id);
         }
+
+      public IList<Batch> BatchDetails()
+      {
+          return _batchRepository.BatchDetails();
+      }
+
+
+      public Batch GetById(int id)
+      {
+          return _batchRepository.GetById(id);
+      }
+
+
+      public bool Update(Batch course)
+      {
+          return _batchRepository.Update(course);
+      }
+
+
+
     }
 }

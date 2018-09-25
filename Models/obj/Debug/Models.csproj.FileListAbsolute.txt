@@ -57,3 +57,8 @@ E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\bin\Debug\System.Web.Mvc.xml
 E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.dll
 E:\Kamruzzaman-50\GitManage\OnlineEMS\Models\obj\Debug\Models.pdb
+G:\GitManage\OnlineEMS\Models\bin\Debug\Models.dll.config
+G:\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.dll
+G:\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.SqlServer.dll
+G:\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.xml
+G:\GitManage\OnlineEMS\Models\bin\Debug\EntityFramework.SqlServer.xml

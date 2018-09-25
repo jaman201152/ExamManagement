@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,36 @@ namespace Repository
          
             return dataList;
         }
+
+
+   
+       public IList<Batch> BatchDetails()
+       {
+           List<Batch> batches = db.Batches
+                                   .Where(c => c.IsDeleted == false)
+                                   .OrderByDescending(c => c.Id)
+                                   .ToList();
+           return batches;
+       }
+
+
+       public Batch GetById(int id)
+       {
+           Batch batch = db.Batches.Find(id);
+           return batch;
+       }
+
+
+       public bool Update(Batch batch)
+       {
+           db.Batches.Attach(batch);
+           db.Entry(batch).State = EntityState.Modified;
+           bool isUpdated = db.SaveChanges() > 0;
+           return isUpdated;
+       }
+
+
+
 
 
     }

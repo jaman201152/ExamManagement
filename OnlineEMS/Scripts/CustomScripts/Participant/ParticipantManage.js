@@ -56,7 +56,7 @@ $(document).ready(function () {
 
         if (courseId != "") {
 
-            var params = { id: courseId }
+            var params = { id: courseId };
             $.ajax({
                 type: "POST",
                 url: "../../Batch/GetCourseByOrganizationId",
@@ -64,18 +64,18 @@ $(document).ready(function () {
                 data: JSON.stringify(params),
                 success: function (rData) {
                     if (rData != undefined && rData != "") {
-                        $("#CourseId").empty();
-                        $("#CourseId").append("<option value=''>--Select--</option>");
+                        $("#BatchId").empty();
+                        $("#BatchId").append("<option value=''>--Select--</option>");
 
                         $.each(rData, function (k, v) {
                             var option = "<option value='" + v.Id + "'>" + v.Name + "</option>";
-                            $("#CourseId").append(option);
+                            $("#BatchId").append(option);
                         });
                         console.log(option);
 
                     } else {
-                        $("#CourseId").empty();
-                        $("#CourseId").append("<option value=''>--Select--</option>");
+                        $("#BatchId").empty();
+                        $("#BatchId").append("<option value=''>--Select--</option>");
 
                     }
                 }

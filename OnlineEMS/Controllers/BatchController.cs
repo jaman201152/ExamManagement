@@ -21,6 +21,8 @@ namespace OnlineEMS.Controllers
         BatchManager _batchManager = new BatchManager();
 
     
+
+    
         //public PartialViewResult GetBatchManageForm()
         //{
 
@@ -81,6 +83,61 @@ namespace OnlineEMS.Controllers
                 return Json(dataList);
             }
             return null;
+        }
+
+
+        public ActionResult BatchDetails()
+        {
+
+            //var model = new CourseCreateVM();
+            //model.Courses = _courseManager.CourseDetails();
+
+            IList<Batch> batches = _batchManager.BatchDetails();
+
+            return View(batches);
+
+        }
+
+
+        [HttpGet]
+        public ActionResult EditBatch(int id)
+        {
+
+            var batchVm = new BatchCreateVM();
+
+            if (id > 0)
+            {
+                var batch =_batchManager.GetById(id);
+
+                batchVm = Mapper.Map<BatchCreateVM>(batch);
+                 batchVm.selectListOrganization = _selectOptionId.SelectOrganization();
+                batchVm.selectListCourse = _selectOptionId.SelectCourse();
+
+            }
+
+            return View(batchVm);
+        }
+
+
+        [HttpPost]
+        public ActionResult EditBatch(BatchCreateVM vm)
+        {
+
+            var course = Mapper.Map<Batch>(vm);
+
+            var isUpdated = _batchManager.Update(course);
+
+
+            if (isUpdated)
+            {
+                ViewBag.Msg = "Success";
+
+                return RedirectToAction("BatchDetails");
+            }
+
+            ViewBag.Msg = "Failed";
+            return RedirectToAction("BatchDetails");
+
         }
 
 

@@ -40,14 +40,25 @@
                             </div>
                         </div>
                         
-                 <div class="form-group">
-                                <label for="Name" class="col-md-2">Course Name</label>
-                                <div class="col-md-10">
-                                    <select id="CourseId" name="CourseId"><option>..Select..</option></select>
-                                </div>
+                        @*<div class="form-group">
+                            <label for="Name" class="col-md-2">Course Name</label>
+                            <div class="col-md-10">
+                                <select id="CourseId" name="CourseId"><option>..Select..</option></select>
                             </div>
+                        </div>*@
+                        
+                        <div class="control-group">
+                            <label class="control-label" for="CourseId">Course Name</label>
+                            <div class="controls">
+                                <select id="CourseId" name="CourseId">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                   
+                                </select>
+                            </div>
+                        </div>
               
-                            <div class="form-group">
+                        <div class="form-group">
                                 <label for="Name" class="col-md-2">Batch No</label>
                                 <div class="col-md-10">
                                     @Html.TextBoxFor(c => c.BatchNo, new { @class = "form-control" })

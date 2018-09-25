@@ -278,6 +278,7 @@
     <Compile Include="Controllers\BatchController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\OrganizationController.cs" />
     <Compile Include="Controllers\ParticipantController.cs" />
     <Compile Include="Controllers\SelectOptionId\SelectOptoinId.cs" />
@@ -307,6 +308,9 @@
     <Content Include="Views\Course\CourseInformation.cshtml" />
     <Content Include="Views\Shared\Course\_CoursePartialDetails.cshtml" />
     <Content Include="Views\Course\EditCourse.cshtml" />
+    <Content Include="Views\Batch\BatchDetails.cshtml" />
+    <Content Include="Views\Batch\EditBatch.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201809230958331_CourseModelUpdated.Designer.cs">
       <DependentUpon>201809230958331_CourseModelUpdated.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809250804293_Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.cs" />
+    <Compile Include="Migrations\201809250804293_Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.Designer.cs">
+      <DependentUpon>201809250804293_Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="OnlineExamDb.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -109,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809230958331_CourseModelUpdated.resx">
       <DependentUpon>201809230958331_CourseModelUpdated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809250804293_Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.resx">
+      <DependentUpon>201809250804293_Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -18,7 +18,7 @@
 
 
 <div>
-    <div class="box span5">
+    <div class="box span4">
         <div class="box-header" data-original-title>
             <h2><i class="halflings-icon edit"></i><span class="break"></span>Course Manage</h2>
             <div class="box-icon">
@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <label for="Name" class="col-md-2">Oganization Name</label>
                             <div class="col-md-10">
-                                @Html.DropDownListFor(c => c.OrganizationId, Model.SelectListItemsOrganization, new { @class = "form-control" })
+                                @Html.DropDownListFor(c => c.OrganizationId, Model.SelectListItemsOrganization, new { @class = "form-control input-xlarge" })
                           
                             </div>
                             @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "help-inline", style = "color:red" })
@@ -55,7 +55,7 @@
                         <div class="form-group">
                             <label for="Name" class="col-md-2">Name</label>
                             <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control" })
+                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge" })
                             </div>
                             @Html.ValidationMessageFor(c => c.Name, null, new { @class = "help-inline", style = "color:red" })
                         </div>
@@ -63,7 +63,7 @@
                         <div class="form-group">
                             <label for="Code" class="col-md-2">Code</label>
                             <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Code, new { @class = "form-control" })
+                                @Html.TextBoxFor(c => c.Code, new { @class = "form-control input-xlarge" })
                             
                             </div>
                             @Html.ValidationMessageFor(c => c.Code, null, new { @class = "help-inline", style = "color:red" })
@@ -71,28 +71,28 @@
                         <div class="form-group">
                             <label for="CourseDuration" class="col-md-2">Course Duration</label>
                             <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.CourseDuration, new { @class = "form-control" })
+                                @Html.TextBoxFor(c => c.CourseDuration, new { @class = "form-control input-xlarge" })
                                 @Html.ValidationMessageFor(c => c.CourseDuration)
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="Credit" class="col-md-2">Credit</label>
                             <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Credit, new { @class = "form-control" })
+                                @Html.TextBoxFor(c => c.Credit, new { @class = "form-control input-xlarge" })
                                 @Html.ValidationMessageFor(c => c.Credit)
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="OutLine" class="col-md-2">OutLine</label>
                             <div class="col-md-10">
-                                @Html.TextAreaFor(c => c.OutLine, new { @class = "form-control" })
+                                @Html.TextAreaFor(c => c.OutLine, new { @class = "form-control input-xlarge" })
                                 @Html.ValidationMessageFor(c => c.OutLine)
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="Tags" class="col-md-2">Tags</label>
                             <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Tags, new { @class = "form-control" })
+                                @Html.TextBoxFor(c => c.Tags, new { @class = "form-control input-xlarge" })
                                 @Html.ValidationMessageFor(c => c.Tags)
                             </div>
                         </div>
@@ -109,8 +109,6 @@
 
                             <input type="submit" name="submit" value="Save" class="btn btn-primary col-md-offset-2" />
 
-                    
-
                         </div>
 
                     </div>
@@ -120,7 +118,7 @@
         </div>
     </div>
     
-    <div class="box span7">
+    <div class="box span8">
         <div class="box-header" data-original-title>
             <h2><i class="halflings-icon user"></i><span class="break"></span>Last Five Entries of Course</h2>
             <div class="box-icon">
