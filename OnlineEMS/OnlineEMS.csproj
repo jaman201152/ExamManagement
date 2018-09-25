@@ -326,6 +326,10 @@
       <Project>{2d3fd94a-2e40-4eeb-a21c-635a40a6e8dd}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DatabaseContext\DatabaseContext.csproj">
+      <Project>{B5186ECC-6114-4F62-9F26-4BA9D6440311}</Project>
+      <Name>DatabaseContext</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Models\Models.csproj">
       <Project>{f4602121-3356-4dea-8ee0-d493a958847c}</Project>
       <Name>Models</Name>

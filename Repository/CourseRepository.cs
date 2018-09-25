@@ -80,6 +80,7 @@ namespace Repository
 
 
           Course course = new Course();
+
           //organization = db.Organizations.Where(c => c.Id == id).FirstOrDefault();
 
           course = db.Courses.FirstOrDefault(c => c.Id == id);
@@ -95,5 +96,8 @@ namespace Repository
 
 
       }
+
+
+
     }
 }

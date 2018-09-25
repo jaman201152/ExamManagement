@@ -58,6 +58,9 @@ namespace BLL
       }
 
 
-
+      public bool Delete(int id)
+      {
+          return _batchRepository.Delete(id);
+      }
     }
 }

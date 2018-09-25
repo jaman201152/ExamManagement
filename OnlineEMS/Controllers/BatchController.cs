@@ -46,8 +46,8 @@ namespace OnlineEMS.Controllers
             return View(batch);
         }
 
-        [HttpPost]
-        public string BatchCreate(BatchCreateVM vm)
+    
+        public string BatchCreateAdd(BatchCreateVM vm)
         {
 
          var batch = Mapper.Map<Batch>(vm);
@@ -65,14 +65,12 @@ namespace OnlineEMS.Controllers
                     return "Did not saved.";
                 }
             }
-
-
+            
 
             return "Sorry! Error Occured.";
 
 
-
-        }
+            }
 
 
         public JsonResult GetCourseByOrganizationId(int id)
@@ -138,6 +136,24 @@ namespace OnlineEMS.Controllers
             ViewBag.Msg = "Failed";
             return RedirectToAction("BatchDetails");
 
+        }
+
+
+        public ActionResult Delete(int id)
+        {
+
+            if (id > 0)
+            {
+                var isDeleted = _batchManager.Delete(id);
+                if (isDeleted)
+                {
+                    ViewBag.Msg = "Success";
+                    return RedirectToAction("BatchDetails");
+                }
+            }
+
+            ViewBag.Msg = "Failed";
+            return RedirectToAction("BatchDetails");
         }
 
 

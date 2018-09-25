@@ -73,6 +73,27 @@ namespace Repository
        }
 
 
+       public bool Delete(int id)
+       {
+
+
+           Batch batch = new Batch();
+
+           //organization = db.Organizations.Where(c => c.Id == id).FirstOrDefault();
+
+           batch = db.Batches.FirstOrDefault(c => c.Id == id);
+
+           if (batch != null)
+           {
+               batch.IsDeleted = true;
+               return Update(batch);
+           }
+
+
+           return false;
+
+
+       }
 
 
 

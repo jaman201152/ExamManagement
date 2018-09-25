@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 
 
-    $(document).on("submit", "#BatchCreateForm", function (e) {
+    $(document).on("submit", "#ParticipantCreateForm", function (e) {
 
         e.preventDefault();
         $(".custom_loader").show();
@@ -20,17 +20,17 @@ $(document).ready(function () {
                 if (data) {
                     $('.msgSaved').html(data);
                     $(".custom_loader").fadeOut();
-                    $('#organizationCreateForm').trigger("reset");
+                    $('#ParticipantCreateForm').trigger("reset");
                     setTimeout(function () {
                         $('.msgSaved').html("");
-                        $('#organizationCreateForm').trigger("reset");
+                        $('#ParticipantCreateForm').trigger("reset");
                         console.log(data);
                     }, 5000);
 
                 } else {
                     $(".custom_loader").fadeOut();
                     $('.msgNotSaved').html(data);
-                    $('#organizationCreateForm').trigger("reset");
+                    $('#ParticipantCreateForm').trigger("reset");
                     setTimeout(function () { // this method for msg hide after 5 second
                         $('.msgNotSaved').html("");
                         console.log(data);
@@ -47,7 +47,7 @@ $(document).ready(function () {
     // Submit Form End
 
 
-
+  
 
 
     $("#CourseId").change(function () {
@@ -59,7 +59,7 @@ $(document).ready(function () {
             var params = { id: courseId };
             $.ajax({
                 type: "POST",
-                url: "../../Batch/GetCourseByOrganizationId",
+                url: "../../Participant/GetBatchByCourseId",
                 contentType: "application/JSON; charset=utf-8",
                 data: JSON.stringify(params),
                 success: function (rData) {
@@ -68,10 +68,10 @@ $(document).ready(function () {
                         $("#BatchId").append("<option value=''>--Select--</option>");
 
                         $.each(rData, function (k, v) {
-                            var option = "<option value='" + v.Id + "'>" + v.Name + "</option>";
+                            var option = "<option value='" + v.Id + "'>" + v.BatchNo + "</option>";
                             $("#BatchId").append(option);
                         });
-                        console.log(option);
+                       // console.log(option);
 
                     } else {
                         $("#BatchId").empty();

@@ -28,11 +28,12 @@ $(document).ready(function () {
     $(document).on("submit", "#BatchCreateForm", function (e) {
 
         e.preventDefault();
+
         $(".custom_loader").show();
 
         $.ajax({
             type: "POST",
-            url: "../../Batch/BatchCreate",
+            url: "../../Batch/BatchCreateAdd",
             data: $(this).serialize(),
             datatype: "html",
             success: function (data) {
