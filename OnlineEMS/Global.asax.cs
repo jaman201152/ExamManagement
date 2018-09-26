@@ -9,6 +9,7 @@ using Models;
 using Models.ViewMoldels.Batch;
 using Models.ViewMoldels.Course;
 using Models.ViewMoldels.Organization;
+using Models.ViewMoldels.Participant;
 
 namespace OnlineEMS
 {
@@ -30,6 +31,12 @@ namespace OnlineEMS
 
                 conf.CreateMap<BatchCreateVM, Batch>();
                 conf.CreateMap<Batch, BatchCreateVM>();
+
+                conf.CreateMap<ParticipantCreateVM, Participant>();
+                conf.CreateMap<Participant, ParticipantCreateVM>();
+
+                
+
 
             });
 

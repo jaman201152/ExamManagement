@@ -7,17 +7,14 @@ $(document).ready(function () {
     $("#BatchPartitalCreate").click(function () {
 
         $(".custom_loader").show();
-
         $.ajax({
             type: "POST",
             url: "../../Batch/GetBatchManageForm",
             contentType: "application/JSON; charset=utf-8",
             data: JSON.stringify(),
             success: function (data) {
-
                 $("#pView").html(data);
                 $(".custom_loader").hide();
-
             }
 
         });

@@ -32,6 +32,7 @@ namespace OnlineEMS.Controllers.SelectOptionId
             }
 
             return selectListItems;
+
         }
 
         public IEnumerable<SelectListItem> SelectCourse()
@@ -48,6 +49,23 @@ namespace OnlineEMS.Controllers.SelectOptionId
                 selectListItem.Text = courseData.Name;
                 selectListItem.Value = courseData.Id.ToString();
 
+                selectListItems.Add(selectListItem);
+            }
+
+            return selectListItems;
+        }
+
+
+        public IEnumerable<SelectListItem> SelectBatch()
+        {
+            List<Batch> batch = _batchManager.GetAllBatch();
+
+            List<SelectListItem> selectListItems = new List<SelectListItem>();
+            foreach (Batch batchData in batch)
+            {
+             SelectListItem selectListItem =new SelectListItem();
+                selectListItem.Text = batchData.BatchNo;
+                selectListItem.Value = batchData.Id.ToString();
                 selectListItems.Add(selectListItem);
             }
 

@@ -311,6 +311,9 @@
     <Content Include="Views\Batch\BatchDetails.cshtml" />
     <Content Include="Views\Batch\EditBatch.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Participant\ParticipantDetails.cshtml" />
+    <Content Include="Views\Participant\IndividualParticipantDetails.cshtml" />
+    <Content Include="Views\Participant\EditParticipant.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -138,3 +138,5 @@ E:\Kamruzzaman-50\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_Required_Anntation_Added.resources
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.CourseModelUpdated.resources
 G:\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.CourseModelUpdated.resources
+E:\2018\BITM-50\BITM Project\GitManage\OnlineEMS\DatabaseContext\obj\Debug\DatabaseContext.Migrations.Batch_Model_New_Porperty_AddedLike_Organization_Course_Update.resources

@@ -96,6 +96,13 @@ namespace Repository
        }
 
 
-
+        public List<Batch> GetAllBatch()
+        {
+            List<Batch> batches = db.Batches
+                .Where(c => c.IsDeleted == false)
+                .OrderByDescending(c => c.Id)
+                .ToList();
+            return batches;
+        }
     }
 }

@@ -34,7 +34,7 @@ namespace Models.ViewMoldels.Participant
         public bool IsDeleted { get; set; }
 
         public IEnumerable<SelectListItem> selectListOrganization { get; set; }
-        public IEnumerable<SelectListItem> selectListCourse { get; set; } 
-
+        public IEnumerable<SelectListItem> selectListCourse { get; set; }
+        public IEnumerable<SelectListItem> selectListBatch { get; set; } 
     }
 }

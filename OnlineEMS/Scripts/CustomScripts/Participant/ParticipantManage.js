@@ -13,7 +13,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: "../../Batch/BatchCreate",
+            url: "../../Participant/ParticipantSubmit",
             data: $(this).serialize(),
             datatype: "html",
             success: function (data) {
@@ -37,9 +37,8 @@ $(document).ready(function () {
                     }, 5000);
 
                 }
-
-
             }
+
         });
 
 

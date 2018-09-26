@@ -1,0 +1,85 @@
+﻿@model IEnumerable<Models.Participant>
+
+
+@{
+    Layout = "~/Views/Dashboard/Dashboard.cshtml";
+}
+
+
+<div class="box span12">
+    <div class="box-header" data-original-title>
+        <h2><i class="halflings-icon user"></i><span class="break"></span>Participants Details</h2>
+        <div class="box-icon">
+            <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+            <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+            <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+        </div>
+    </div>
+    <div class="box-content">
+
+        <label for="Name" class="col-md-6">
+            @if (ViewBag.Msg == "Success")
+            {
+                <span style="color: green" class="text-center">Successfully Deleted One Item!</span>
+            }
+            else if (ViewBag.Msg == "Failed")
+            {
+                <span style="color: red" class="text-center"> Sorry Execution failed!</span>
+            }
+        </label>
+
+        <table class="table table-striped table-bordered bootstrap-datatable datatable">
+            <thead>
+                <tr>
+                    <th>SL</th>
+                    <th>Participant Name</th>
+                    <th>Organization Name</th>
+                    <th>Course Name</th>
+                    <th>Batch No</th>
+                    <th>Regi No</th>
+                    <th>Contact No</th>
+                    <th>Email</th>
+                    <th>Address line1</th>
+                    <th>City</th>
+                    <th>Highest Education</th>
+                    <th>Photo</th>
+                 
+                </tr>
+            </thead>
+            <tbody>
+                @{
+
+                    int i = 1;
+
+                    foreach (var participant in Model)
+                    {
+                        <tr>
+                            <td>@(i++)</td>
+                            <td>@participant.Name</td>
+                            <td>@participant.OrganizationId</td>
+                            <td class="center">@participant.CourseId</td>
+                            <td>@participant.BatchId</td>
+                            <td class="center" width="150">@participant.RegNo</td>
+                            <td class="center">@participant.ContactNo</td>
+                            <td class="center">@participant.Email</td>
+                            <td class="center" width="150">@participant.AddressLine1</td>
+                            <td class="center" width="150">@participant.City</td>
+                            <td class="center" width="150">@participant.HighestAcademic</td>
+                            <td class="center">@participant.Image</td>
+
+                        
+                        </tr>
+                    }
+
+                }
+
+
+
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+</div><!--/span-->

@@ -15,7 +15,7 @@
         <a href="~/Dashboard/IndexView">Home</a>
         <i class="icon-angle-right"></i>
     </li>
-    <li><a href="#">Add New Participant</a></li>
+    <li><a href="#">Update Participant</a></li>
 </ul>
 
 <div>
@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="box-content">
-            <form method="POST" id="ParticipantCreateForm">
+            <form method="POST">
 
                 <div class="container">
 
@@ -46,14 +46,15 @@
                         <div class="form-group">
                             <label for="CourseId" class="col-md-2">Course Name</label>
                             <div class="col-md-10">
-                                <select id="CourseId" name="CourseId" class="input-xlarge"><option>..Select..</option></select>
+                         @Html.DropDownListFor(c=>c.CourseId,Model.selectListCourse,new{@class="input-xlarge"})
+                                @Html.ValidationMessageFor(c => c.CourseId, null, new { @class = "text-danger" })
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="BatchId" class="col-md-2">Batch No</label>
                             <div class="col-md-10">
-                                <select id="BatchId" name="BatchId" class="input-xlarge"><option>..Select..</option></select>
+                              @Html.DropDownListFor(c => c.BatchId, Model.selectListBatch, new { @class = "input-xlarge" })
                             </div>
                         </div>
                         <div class="form-group">
@@ -64,7 +65,7 @@
                                 @Html.ValidationMessageFor(c => c.Name)
                             </div>
                         </div>
-                     
+
                         <div class="form-group">
                             <label for="Code" class="col-md-2">Regi No</label>
                             <div class="col-md-10">
@@ -96,7 +97,7 @@
                                 @Html.ValidationMessageFor(c => c.AddressLine1)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="AddressLine2" class="col-md-2">Address Line2</label>
                             <div class="col-md-10">
@@ -104,7 +105,7 @@
                                 @Html.ValidationMessageFor(c => c.AddressLine2)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="Country" class="col-md-2">Country</label>
                             <div class="col-md-10">
@@ -112,7 +113,7 @@
                                 @Html.ValidationMessageFor(c => c.Country)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="City" class="col-md-2">City</label>
                             <div class="col-md-10">
@@ -120,7 +121,7 @@
                                 @Html.ValidationMessageFor(c => c.City)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="PostalCode" class="col-md-2">Postal Code</label>
                             <div class="col-md-10">
@@ -128,8 +129,8 @@
                                 @Html.ValidationMessageFor(c => c.PostalCode)
                             </div>
                         </div>
-                        
-                     
+
+
 
                         <div class="form-group">
                             <label for="Profession" class="col-md-2">Profession</label>
@@ -138,7 +139,7 @@
                                 @Html.ValidationMessageFor(c => c.Profession)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="HighestAcademic" class="col-md-2">Higher Education</label>
                             <div class="col-md-10">
@@ -146,7 +147,7 @@
                                 @Html.ValidationMessageFor(c => c.HighestAcademic)
                             </div>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="HighestAcademic" class="col-md-2">Photo</label>
                             <div class="col-md-10">
@@ -156,12 +157,12 @@
                         </div>
 
                         @*<div class="form-group">
-                            <label for="credit" class="col-md-2"></label>
-                            <div class="col-md-10">
-                                @html.textboxfor(c => c.isdeleted, new { @class = "form-control", value = "true" })
-                                @html.validationmessagefor(c => c.isdeleted)
-                            </div>
-                        </div>*@
+                                <label for="credit" class="col-md-2"></label>
+                                <div class="col-md-10">
+                                    @html.textboxfor(c => c.isdeleted, new { @class = "form-control", value = "true" })
+                                    @html.validationmessagefor(c => c.isdeleted)
+                                </div>
+                            </div>*@
 
                         <br />
                         <div class="form-group">
@@ -187,7 +188,7 @@
         </div>
     </div>
 
-    
+
 </div>
 
 

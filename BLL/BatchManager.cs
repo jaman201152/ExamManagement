@@ -20,7 +20,7 @@ namespace BLL
 
             return isAdded;
         }
-        
+      
 
 
         public List<Organization> GetAllOrganizations()
@@ -62,5 +62,10 @@ namespace BLL
       {
           return _batchRepository.Delete(id);
       }
+
+        public List<Batch> GetAllBatch()
+        {
+            return _batchRepository.GetAllBatch();
+        }
     }
 }

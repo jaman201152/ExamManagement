@@ -52,6 +52,8 @@ namespace OnlineEMS.Controllers
 
          var batch = Mapper.Map<Batch>(vm);
 
+            batch.StartDate = Convert.ToDateTime(vm.StartDate);
+            batch.EndDate = Convert.ToDateTime(vm.EndDate);
 
             if (ModelState.IsValid)
             {
@@ -66,9 +68,7 @@ namespace OnlineEMS.Controllers
                 }
             }
             
-
             return "Sorry! Error Occured.";
-
 
             }
 
