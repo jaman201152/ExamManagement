@@ -67,5 +67,8 @@ namespace BLL
         {
             return _batchRepository.GetAllBatch();
         }
+
+      
+
     }
 }

@@ -52,6 +52,12 @@ namespace BLL
             return _organizationRepository.Delete(id);
         }
 
+
+        public int GenerateCode()
+        {
+            return _organizationRepository.GenerateCode();
+        }
+
        
     }
 }

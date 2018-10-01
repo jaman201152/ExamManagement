@@ -19,7 +19,9 @@
 </ul>
 
 <div>
-    <div class="box span8">
+
+
+<div class="box span8">
         <div class="box-header" data-original-title>
             <h2><i class="halflings-icon edit"></i><span class="break"></span>Participant Manage</h2>
             <div class="box-icon">
@@ -33,159 +35,173 @@
 
                 <div class="container">
 
-                    <div class="form-horizontal">
-                        @Html.ValidationSummary(true, null, new { @class = "text-danger " })
-                        <div class="form-group">
-                            <label for="OrganizationId" class="col-md-2">Oganization Name</label>
-                            <div class="col-md-10">
-                                @Html.DropDownListFor(c => c.OrganizationId, Model.selectListOrganization, new { @class = "input-xlarge" })
-                                @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
-                            </div>
-                        </div>
+                    <div class="span2">
 
-                        <div class="form-group">
-                            <label for="CourseId" class="col-md-2">Course Name</label>
-                            <div class="col-md-10">
-                                <select id="CourseId" name="CourseId" class="input-xlarge"><option>..Select..</option></select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="BatchId" class="col-md-2">Batch No</label>
-                            <div class="col-md-10">
-                                <select id="BatchId" name="BatchId" class="input-xlarge"><option>..Select..</option></select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Code" class="col-md-2">Participant Name</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge" })
-
-                                @Html.ValidationMessageFor(c => c.Name)
-                            </div>
-                        </div>
-                     
-                        <div class="form-group">
-                            <label for="Code" class="col-md-2">Regi No</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.RegNo, new { @class = "form-control input-xlarge" })
-
-                                @Html.ValidationMessageFor(c => c.RegNo)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Code" class="col-md-2">Contact No</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.ContactNo, new { @class = "form-control input-xlarge" })
-
-                                @Html.ValidationMessageFor(c => c.ContactNo)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="Code" class="col-md-2">Email</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Email, new { @class = "form-control input-xlarge" })
-
-                                @Html.ValidationMessageFor(c => c.Email)
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="AddressLine1" class="col-md-2">Address Line1</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.AddressLine1, new { @class = "form-control input-xlarge " })
-                                @Html.ValidationMessageFor(c => c.AddressLine1)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="AddressLine2" class="col-md-2">Address Line2</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.AddressLine2, new { @class = "form-control input-xlarge " })
-                                @Html.ValidationMessageFor(c => c.AddressLine2)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="Country" class="col-md-2">Country</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Country, new { @class = "form-control input-xlarge " })
-                                @Html.ValidationMessageFor(c => c.Country)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="City" class="col-md-2">City</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.City, new { @class = "form-control input-xlarge " })
-                                @Html.ValidationMessageFor(c => c.City)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="PostalCode" class="col-md-2">Postal Code</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.PostalCode, new { @class = "form-control input-xlarge " })
-                                @Html.ValidationMessageFor(c => c.PostalCode)
-                            </div>
-                        </div>
-                        
-                     
-
-                        <div class="form-group">
-                            <label for="Profession" class="col-md-2">Profession</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Profession, new { @class = "form-control  input-xlarge" })
-                                @Html.ValidationMessageFor(c => c.Profession)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="HighestAcademic" class="col-md-2">Higher Education</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.HighestAcademic, new { @class = "form-control  input-xlarge" })
-                                @Html.ValidationMessageFor(c => c.HighestAcademic)
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="HighestAcademic" class="col-md-2">Photo</label>
-                            <div class="col-md-10">
-                                @Html.TextBoxFor(c => c.Image, new { @class = "form-control  input-xlarge" })
-                                @Html.ValidationMessageFor(c => c.Image)
-                            </div>
-                        </div>
-
-                        @*<div class="form-group">
-                            <label for="credit" class="col-md-2"></label>
-                            <div class="col-md-10">
-                                @html.textboxfor(c => c.isdeleted, new { @class = "form-control", value = "true" })
-                                @html.validationmessagefor(c => c.isdeleted)
-                            </div>
-                        </div>*@
-
-                        <br />
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-primary col-md-offset-2" />
-
-
-                            <!-- Start Loader and Saving Message -->
-                            <span class="custom_loader">
-                                <i class="fa fa-refresh fa-spin"></i>
-                                Saving please Wait ...
-                            </span>
-                            <div class="msgSaved" style="color: green" class="text-center"></div>
-                            <div class="msgNotSaved" style="color: red" class="text-center"></div>
-                            <!-- End Loader and Saving Message -->
-
-
-                        </div>
 
                     </div>
+                    <div class="span10">
+
+
+
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, null, new { @class = "text-danger " })
+                            <div class="form-group">
+                                <label for="OrganizationId" class="col-md-2">Oganization Name</label>
+                                <div class="col-md-10">
+                                    @Html.DropDownListFor(c => c.OrganizationId, Model.selectListOrganization, new { @class = "input-xlarge" })
+                                    @Html.ValidationMessageFor(c => c.OrganizationId, null, new { @class = "text-danger" })
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="CourseId" class="col-md-2">Course Name</label>
+                                <div class="col-md-10">
+                                    <select id="CourseId" name="CourseId" class="input-xlarge"><option>..Select..</option></select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="BatchId" class="col-md-2">Batch No</label>
+                                <div class="col-md-10">
+                                    <select id="BatchId" name="BatchId" class="input-xlarge"><option>..Select..</option></select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Code" class="col-md-2">Participant Name</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge" })
+
+                                    @Html.ValidationMessageFor(c => c.Name)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Code" class="col-md-2">Regi No</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.RegNo, new { @class = "form-control input-xlarge" })
+
+                                    @Html.ValidationMessageFor(c => c.RegNo)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Code" class="col-md-2">Contact No</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.ContactNo, new { @class = "form-control input-xlarge" })
+
+                                    @Html.ValidationMessageFor(c => c.ContactNo)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="Code" class="col-md-2">Email</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Email, new { @class = "form-control input-xlarge" })
+
+                                    @Html.ValidationMessageFor(c => c.Email)
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="AddressLine1" class="col-md-2">Address Line1</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.AddressLine1, new { @class = "form-control input-xlarge " })
+                                    @Html.ValidationMessageFor(c => c.AddressLine1)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="AddressLine2" class="col-md-2">Address Line2</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.AddressLine2, new { @class = "form-control input-xlarge " })
+                                    @Html.ValidationMessageFor(c => c.AddressLine2)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Country" class="col-md-2">Country</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Country, new { @class = "form-control input-xlarge " })
+                                    @Html.ValidationMessageFor(c => c.Country)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="City" class="col-md-2">City</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.City, new { @class = "form-control input-xlarge " })
+                                    @Html.ValidationMessageFor(c => c.City)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="PostalCode" class="col-md-2">Postal Code</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.PostalCode, new { @class = "form-control input-xlarge " })
+                                    @Html.ValidationMessageFor(c => c.PostalCode)
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <label for="Profession" class="col-md-2">Profession</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Profession, new { @class = "form-control  input-xlarge" })
+                                    @Html.ValidationMessageFor(c => c.Profession)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="HighestAcademic" class="col-md-2">Higher Education</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.HighestAcademic, new { @class = "form-control  input-xlarge" })
+                                    @Html.ValidationMessageFor(c => c.HighestAcademic)
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="HighestAcademic" class="col-md-2">Photo</label>
+                                <div class="col-md-10">
+                                    @Html.TextBoxFor(c => c.Image, new { @class = "form-control  input-xlarge" })
+                                    @Html.ValidationMessageFor(c => c.Image)
+                                </div>
+                            </div>
+
+                            @*<div class="form-group">
+                                        <label for="credit" class="col-md-2"></label>
+                                        <div class="col-md-10">
+                                            @html.textboxfor(c => c.isdeleted, new { @class = "form-control", value = "true" })
+                                            @html.validationmessagefor(c => c.isdeleted)
+                                        </div>
+                                    </div>*@
+
+                            <br />
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary col-md-offset-2" />
+
+
+                                <!-- Start Loader and Saving Message -->
+                                <span class="custom_loader">
+                                    <i class="fa fa-refresh fa-spin"></i>
+                                    Saving please Wait ...
+                                </span>
+                                <div class="msgSaved" style="color: green" class="text-center"></div>
+                                <div class="msgNotSaved" style="color: red" class="text-center"></div>
+                                <!-- End Loader and Saving Message -->
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
                 </div>
             </form>
 
         </div>
     </div>
+
 
     
 </div>

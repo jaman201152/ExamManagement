@@ -20,7 +20,7 @@
 <div>
     <div class="box span4">
         <div class="box-header" data-original-title>
-            <h2><i class="halflings-icon edit"></i><span class="break"></span>Course Manage</h2>
+            <h2><i class="halflings-icon edit"></i><span class="break"></span>Course Entry Form</h2>
             <div class="box-icon">
                 <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                 <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
@@ -28,6 +28,7 @@
             </div>
         </div>
         <div class="box-content">
+         
             <form method="POST" id="CourseCreateForm">
 
                 <div class="container">
@@ -53,7 +54,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="Name" class="col-md-2">Name</label>
+                            <label for="Name" class="col-md-2">Course Name</label>
                             <div class="col-md-10">
                                 @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge" })
                             </div>

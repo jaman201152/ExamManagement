@@ -21,11 +21,11 @@
 
                 @if (Model != null && Model.Organizations != null && Model.Organizations.Count > 0)
                 {
-                    var id = 5;
+                    var id = 1;
                     foreach (var organization in Model.Organizations)
                     {
                         <tr>
-                            <td>@(id--)</td>
+                            <td>@(id++)</td>
                             <td>@organization.Name</td>
                             <td class="center">@organization.Code</td>
                             <td class="center">@organization.Address</td>

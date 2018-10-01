@@ -42,18 +42,16 @@
                     <div class="form-group">
                         <label for="Name" class="col-md-4">Name</label>
                         <div class="col-md-8">
-                            @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge", id = "OrgName" })
+                            @Html.TextBoxFor(c => c.Name, new { @class = "form-control input-xlarge", id="OrgName", autocomplete="off" })
                        
                         </div>
-
                         @Html.ValidationMessageFor(c => c.Name, null, new { @class = "help-inline", style = "color:red" })
-
-                    </div>
+                        </div>
                     <div class="form-group">
                         <label for="Code" class="col-md-2">Code</label>
                         <div class="col-md-10">
-                            @Html.TextBoxFor(c => c.Code, new { @class = "form-control input-xlarge" })
-
+                            @Html.TextBoxFor(c => c.Code, Model.Code, new { @class = "form-control input-xlarge",@readonly="readonly"})
+                            @Html.HiddenFor(m => m.OrganizationCode,Model.OrganizationCode)
                         </div>
                         @Html.ValidationMessageFor(c => c.Code, null, new { @class = "help-inline", style = "color:red" })
                     </div>
@@ -133,6 +131,7 @@
     $(document).ready(function () {
 
 
+
         function OrganizationDetails() {
 
             $.ajax({
@@ -152,6 +151,35 @@
         }
 
         OrganizationDetails();
+
+
+
+        // Start for Creating Organization Code //
+
+        $("#OrgName").keyup(function () {
+
+            //  var rowCountNumber = $("#code").val();
+            // alert('test');
+            var value = $(this).val();
+            var dt = new Date();
+            var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
+            var rowNumber = $("#OrganizationCode").val();
+            var str = "", abbr = "";
+            str = value;
+            str = str.split(' ');
+            var length = str.length - 1;
+            for (i = 0; i < str.length; i++) {
+                //abbr += str[i].substr(0,1);
+                abbr = str[0].substr(0, 1) + str[length].substr(0, 1); // this will take first character of first word and last word    
+                //  $('#Code').val(abbr + '-' + dt.getFullYear().toString().substr(2, 2) + dt.getMonth() + dt.getMinutes() + dt.getSeconds());
+                $('#Code').val(abbr + '-' + dt.getFullYear().toString().substr(2, 2) + dt.getMonth()+rowNumber);
+                // automatically create Organization Code new after writting Company Name
+            }
+
+        });
+
+        // End to Create Organization Code //
+
 
 
     });

@@ -13,7 +13,7 @@ namespace OnlineEMS.Controllers
     public class OrganizationController : Controller
     {
        
-        
+       
       OrganizationManager _organizationManager = new OrganizationManager();
 
 
@@ -27,6 +27,8 @@ namespace OnlineEMS.Controllers
 
             var model = new OrganizationCreateVM();
             model.Organizations = _organizationManager.GetAll();
+
+            model.OrganizationCode = _organizationManager.GenerateCode().ToString();
 
             return PartialView("~/Views/Shared/Organization/_OrganizationPartialCreate.cshtml",model);
 

@@ -26,6 +26,8 @@ namespace Repository
 
             }
 
+
+
         public List<Organization> GetAll()
         {
             List<Organization> organizations = db.Organizations
@@ -86,6 +88,14 @@ namespace Repository
             return false;
 
 
+        }
+
+
+        public int GenerateCode()
+        {
+
+          var countRow =  db.Organizations.Count()+1;
+          return countRow;
         }
 
 

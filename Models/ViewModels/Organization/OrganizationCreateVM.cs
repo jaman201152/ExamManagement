@@ -21,6 +21,7 @@ namespace Models.ViewMoldels.Organization
         public string LogoName { get; set; }
         public string LogoUrl { get; set; }
         public bool IsDeleted { get; set; }
+        public string OrganizationCode { get; set; }
 
        public List<Models.Organization> Organizations { get; set; }
 
